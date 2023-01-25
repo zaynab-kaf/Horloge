@@ -12,9 +12,9 @@ def intervalle_heure():
 
         if msvcrt.kbhit(): #Si nous pressons bare-espace ...
                 if ord(msvcrt.getch()) == 32:
-                    break #... nous sortons de la boucle
+                    break                               #... nous sortons de la boucle
 
-#intervalle_heure()
+intervalle_heure()
 
 def afficher_heure(heures, minutes, secondes):
     import datetime
@@ -27,7 +27,7 @@ def afficher_heure(heures, minutes, secondes):
     print(modified_time.strftime("%H:%M:%S"))
     print("Modified time:", modified_time.strftime("%H:%M:%S"))
 
-#afficher_heure(15, 15, 15)
+afficher_heure(15, 15, 15)
 
 
 # FAIL
@@ -44,4 +44,4 @@ def regler_alarme(heures, minutes, secondes):
             print("Dring Dring")
 
 
-regler_alarme(16, 10, 50)
+#regler_alarme(16, 10, 50)
